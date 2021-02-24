@@ -17,7 +17,7 @@
                     <br>
 
                     <div>
-                        <textarea name="Contenido" id="Contenido" cols="40" rows="10" >{{$noticias->contenido}}</textarea>
+                        <textarea name="contenido" id="Contenido" cols="40" rows="10" >{{$noticias->contenido}}</textarea>
                         <script>
 
                             CKEDITOR.replace('Contenido', {
@@ -40,7 +40,7 @@
                 <label for="Fecha" >
                     {{'Fecha'}}
                     <br>
-                    <input class="form-control" type="date" name="Fecha" value="{{$noticias->fecha_creacion}}"><br>
+                    <input class="form-control" type="date" name="fecha_creacion" value="{{$noticias->fecha_creacion}}"><br>
                 </label>
             </div>
 
@@ -48,7 +48,7 @@
                 <label for="Foto" >
                     {{'Foto'}}
                     <br>
-                    <input class="form-control-file" type="file" name="Foto" value=""><br>
+                    <input class="form-control-file" type="file" name="foto" value=""><br>
                 </label>
             </div>
             <div>

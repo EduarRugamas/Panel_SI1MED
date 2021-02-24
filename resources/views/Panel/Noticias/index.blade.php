@@ -1,4 +1,4 @@
-@extends('Plantillas.index_plantilla')
+@extends('Plantillas.plantilla_panel')
 
 @section('tabla')
 
@@ -17,7 +17,7 @@
                 <tr>
                     {{-- <td>{{$loop->iteration}}</td> --}}
                     <td>
-                        <img src="{{ asset('storage'.'/'.$noticia->foto)}}" alt="" width="200">
+                        <img src="{{ asset('storage'.'/'.$noticia->foto)}}" alt="" width="200" height="200">
 
                     </td>
                     <td>{!!$noticia->contenido!!}</td>

@@ -68,14 +68,15 @@ class NoticiasController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Noticias  $noticias
+     * @param $id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function edit(Noticias $noticias, $id)
+    public function edit($id)
     {
         //
 
         $noticias = Noticias::findOrFail($id);
+
         return view('Panel.Noticias.edit', compact('noticias'));
     }
 
@@ -100,9 +101,9 @@ class NoticiasController extends Controller
 
         }
 
-        Noticias::where('id', '=', $id)->update($datosNoticias);
+        Noticias::where('id','=', $id)->update($datosNoticias);
 
-        return view('noticias');
+        return redirect('noticias');
     }
 
     /**
