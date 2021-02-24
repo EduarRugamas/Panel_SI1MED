@@ -7,13 +7,12 @@
         <tr>
             <th>Foto</th>
             <th>Contenido</th>
-            <th>Fecha</th>
             <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
-        @isset($noticias)
-            @foreach ($noticias as $items)
+        @isset($publicidades)
+            @foreach ($publicidades as $items)
                 <tr>
                     {{-- <td>{{$loop->iteration}}</td> --}}
                     <td>
@@ -21,7 +20,6 @@
 
                     </td>
                     <td>{!!$items->contenido!!}</td>
-                    <td>{{$items->fecha_creacion}}</td>
                     <td>
                         <a class="btn btn-secondary" href="{{url('/noticias/'.$items->id.'/edit')}}">
                             Edit

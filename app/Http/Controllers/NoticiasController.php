@@ -18,7 +18,7 @@ class NoticiasController extends Controller
         //
         $noticias = Noticias::paginate(5);
 
-        return view('Panel.Noticias.index',compact('noticias'));
+        return view('Home.home',compact('noticias'));
     }
 
     /**

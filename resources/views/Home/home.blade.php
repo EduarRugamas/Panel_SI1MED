@@ -7,8 +7,8 @@
 @section('tabla')
 
     @isset ($noticias)
-        @if ($noticias->isEmpty())
-@section('tabla')
+        @if ($noticias -> isEmpty())
+    @section('tabla')
 
     <table class="table table-light">
         <thead class="thead-light">
@@ -35,8 +35,9 @@
 @endif
 
 @endisset
-@isset($publicidad)
-    @if ($publicidad->isEmpty())
+
+@isset($publicidades)
+    @if ($publicidades -> isEmpty())
 @section('tabla')
 
     <table class="table table-light">
@@ -57,7 +58,7 @@
     </table>
 @endsection
 @else
-    @include('Panel.Publicidad.index')
+    @include('Panel.Publicidades.index')
 @endif
 
 @endisset

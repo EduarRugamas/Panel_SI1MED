@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('noticias','NoticiasController');
+Route::resource('publicidad','PublicidadesController');
