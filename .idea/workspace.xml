@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70953806-cba6-41ec-9e14-a185aac2d620" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Noticias.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_24_015617_create_noticias_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/home_index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Home/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Plantillas/index_plantilla.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Plantillas/plantilla_panel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Noticias/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Noticias/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Noticias/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614130165024</updated>
       <workItem from="1614130172744" duration="188000" />
-      <workItem from="1614130386516" duration="3469000" />
+      <workItem from="1614130386516" duration="4289000" />
     </task>
     <servers />
   </component>
