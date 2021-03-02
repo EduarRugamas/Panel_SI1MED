@@ -16,8 +16,8 @@
 </head>
 <body>
 
-<div class="d-flex">
-    <div id="sidebar-container" class="bg-primary">
+<div class=" d-flex ">
+    <div id="sidebar-container" class="bg-primary ">
         <div class="logo">
             <h3 class="text-light font-weight-bold">Panel Control</h3>
         </div>
@@ -25,7 +25,7 @@
             <a href="{{url('/')}}" class="d-block text-light p-3"><i class="icon ion-md-home mr-2 lead"></i>Tabla de Contenido</a>
             <a href="{{url('/noticias/create')}}" class="d-block text-light p-3"><i class="icon ion-md-paper mr-2 lead"></i>Agregar Noticias</a>
             <a href="{{url('/publicidad/create')}}" class="d-block text-light p-3"><i class="icon ion-md-paper mr-2 lead"></i>Agregar Publicidad</a>
-{{--            <a href="{{url('/doctores/create')}}" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Doctores</a>--}}
+            <a href="{{url('/UsuariosDoctors/create')}}" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Formulario para Doctores</a>
         </div>
     </div>
     <div class="w-100">

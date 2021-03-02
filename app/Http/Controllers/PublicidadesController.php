@@ -16,9 +16,9 @@ class PublicidadesController extends Controller
     public function index()
     {
         //
-        $publicidades = Publicidades::paginate(5);
+        $publicidad = Publicidades::paginate(5);
 
-        return view('Home.home',compact('publicidades'));
+        return view('Home.home',compact('publicidad'));
     }
 
     /**
@@ -88,7 +88,7 @@ class PublicidadesController extends Controller
         if($request->hasFile('foto')){
 
             $publicidades = Publicidades::findOrFail($id);
-            Storage::delete('public'.$publicidades->foto);
+            Storage::delete('public/'.$publicidades->foto);
             $datosPublicidades['foto'] = $request->file('foto')->store('uploads','public');
         }
 
@@ -102,12 +102,12 @@ class PublicidadesController extends Controller
      * @param  \App\Publicidades  $publicidades
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function destroy(Publicidades $publicidades,$id)
+    public function destroy($id)
     {
         //
 
         $publicidades = Publicidades::findOrFail($id);
-        if (Storage::delete('public' . $publicidades->foto)){
+        if (Storage::delete('public/' . $publicidades->foto)){
             Publicidades::destroy($id);
         }
 

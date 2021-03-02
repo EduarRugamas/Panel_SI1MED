@@ -5,7 +5,7 @@
     <h1>
         Formulario de publicacion de publicidad
     </h1>
-    <div class=" h-150 row justify-content-center h-100">
+    <div class="h-150 row justify-content-center h-100">
         <form action="{{url('/publicidad')}}" METHOD="post" enctype="multipart/form-data">
             {{@csrf_field()}}
             <br>

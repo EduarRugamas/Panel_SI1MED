@@ -19,6 +19,7 @@ a:hover{
 
 #sidebar-container{
     min-height: 100vh;
+
 }
 #sidebar-container .logo{
     padding: .875rem 1.25rem;
@@ -27,9 +28,7 @@ a:hover{
     width: 15rem;
 }
 
-.avatar{
-    max-width: 35px;
-}
+
 
 #content{
     overflow-y: auto;

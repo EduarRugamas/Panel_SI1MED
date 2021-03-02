@@ -2,13 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70953806-cba6-41ec-9e14-a185aac2d620" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Publicidades/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Publicidades/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Publicidades/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style_new_plantilla.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bx-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/menu_deslisable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sass/panel_new.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Plantillas/plantilla_panel_2.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Plantillas/plantilla_panel_new.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PanelAdmin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PanelAdmin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicidadesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicidadesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/home_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home_index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Noticias/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Noticias/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Publicidades/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Publicidades/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Publicidades/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Publicidades/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Plantillas/plantilla_panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Plantillas/plantilla_panel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -125,6 +166,7 @@
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ouIgjgyHgTd6CVjexgmCzJMA1C" />
@@ -137,10 +179,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/sass" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -158,7 +209,10 @@
       <updated>1614130165024</updated>
       <workItem from="1614130172744" duration="188000" />
       <workItem from="1614130386516" duration="4429000" />
-      <workItem from="1614177674631" duration="3949000" />
+      <workItem from="1614177674631" duration="10203000" />
+      <workItem from="1614264184778" duration="122000" />
+      <workItem from="1614350632562" duration="5867000" />
+      <workItem from="1614698634472" duration="14376000" />
     </task>
     <servers />
   </component>

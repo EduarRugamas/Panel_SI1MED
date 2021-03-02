@@ -11,8 +11,8 @@
         </tr>
         </thead>
         <tbody>
-        @isset($publicidades)
-            @foreach ($publicidades as $items)
+        @isset($publicidad)
+            @foreach ($publicidad as $items)
                 <tr>
                     {{-- <td>{{$loop->iteration}}</td> --}}
                     <td>
@@ -21,10 +21,10 @@
                     </td>
                     <td>{!!$items->contenido!!}</td>
                     <td>
-                        <a class="btn btn-secondary" href="{{url('/noticias/'.$items->id.'/edit')}}">
+                        <a class="btn btn-secondary" href="{{url('/publicidad/'.$items->id.'/edit')}}">
                             Edit
                         </a>
-                        <form method="POST" action="{{ url('/noticias/'.$items->id)}}">
+                        <form method="POST" action="{{ url('/publicidad/'.$items->id)}}">
                             {{csrf_field()}}
                             {{method_field('DELETE')}}
 
