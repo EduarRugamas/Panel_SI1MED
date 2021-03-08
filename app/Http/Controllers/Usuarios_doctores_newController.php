@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ValidacionUsuariosDoctors;
 use App\Usuarios_doctores_new;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use phpDocumentor\Reflection\Utils;
 
 
 class Usuarios_doctores_newController extends Controller
@@ -41,20 +44,65 @@ class Usuarios_doctores_newController extends Controller
 
     }
 
-    public function store(){
+        public function store(ValidacionUsuariosDoctors $request){
 
-    }
-    
-    public function edit(){
+            $datosUsuarios_doctors = $request -> except('_token');
 
-    }
+            if($request->hasFile('logo') && $request->hasFile('perfil') && $request->hasFile('marca')){
 
-    public function update(){
+                $datosUsuarios_doctors['logo'] = $request->file('logo')->store('Images_Doctors/Logo','public');
+                $datosUsuarios_doctors['perfil'] = $request->file('perfil')->store('Images_Doctors/Perfil','public');
+                $datosUsuarios_doctors['marca'] = $request->file('marca')->store('Images_Doctors/Marca','public');
 
-    }
-    public function destroy(){
+            }
+            Usuarios_doctores_new::insert($datosUsuarios_doctors);
 
-    }
+            return redirect('/');
+        }
+
+        public function edit($id){
+
+            $usuarios_doctores = Usuarios_doctores_new::findOrFail($id);
+
+            return view('Panel.Usuario_doctores.edit',compact('usuarios_doctores'));
+        }
+
+        public function update(ValidacionUsuariosDoctors $request, $id){
+
+                $datos_usuarios_new = request()->except(['_token','_method']);
+
+                if ($request->hasFile('logo') && $request->hasFile('perfil') && $request->hasFile('marca')){
+
+                    $usuarios_doctores = Usuarios_doctores_new::findOrFail($id);
+
+                    Storage::delete('public/'.$usuarios_doctores->logo);
+                    Storage::delete('public/'.$usuarios_doctores->perfil);
+                    Storage::delete('public/'.$usuarios_doctores->marca);
+
+                    $datos_usuarios_new['logo']= $request->file('logo')->store('Images_Doctors/Logo', 'public');
+                    $datos_usuarios_new['perfil']= $request->file('perfil')->store('Images_Doctors/Perfil', 'public');
+                    $datos_usuarios_new['marca']= $request->file('marca')->store('Images_Doctors/Marca', 'public');
+
+                }
+
+                Usuarios_doctores_new::where('id','=',$id)->update($datos_usuarios_new);
+
+                return redirect('UsuariosDoctors');
+
+        }
+        public function destroy($id){
+
+                $usuarios_doct = Usuarios_doctores_new::findOrFail($id);
+
+                if (Storage::delete('public/'.$usuarios_doct->logo) && Storage::delete('public/'.$usuarios_doct->perfil) && Storage::delete('public/'.$usuarios_doct->marca)){
+
+                    Usuarios_doctores_new::destroy($id);
+
+                }
+
+                return redirect('UsuariosDoctors');
+
+        }
 
 
 }

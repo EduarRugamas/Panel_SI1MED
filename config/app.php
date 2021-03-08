@@ -166,6 +166,9 @@ return [
          * Package Service Providers...
          */
 
+
+
+
         /*
          * Application Service Providers...
          */
@@ -174,6 +177,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        //validation personalizada
+
+        App\Providers\RulesPersonalizadas::class
 
     ],
 

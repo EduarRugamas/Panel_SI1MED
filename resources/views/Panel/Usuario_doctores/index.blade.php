@@ -26,11 +26,7 @@
         @isset($usuarios)
             @foreach ($usuarios as $items)
                 <tr>
-                    {{-- <td>{{$loop->iteration}}</td> --}}
-{{--                    <td>--}}
-{{--                        <img src="{{ asset('storage'.'/'.$items->foto)}}" alt="" width="200" height="200">--}}
 
-{{--                    </td>--}}
                     <td>{{$items->nombreDoctor}}</td>
                     <td>{{$items->apellidosDoctor}}</td>
                     <td>{{$items->tituloDoctor}}</td>
@@ -50,10 +46,10 @@
 
 
                     <td>
-                        <a class="btn btn-secondary" href="{{url('/publicidad/'.$items->id.'/edit')}}">
+                        <a class="btn btn-secondary" href="{{url('/UsuariosDoctors/'.$items->id.'/edit')}}">
                             Edit
                         </a>
-                        <form method="POST" action="{{ url('/publicidad/'.$items->id)}}">
+                        <form method="POST" action="{{ url('/UsuariosDoctors/'.$items->id)}}">
                             {{csrf_field()}}
                             {{method_field('DELETE')}}
 

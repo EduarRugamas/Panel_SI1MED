@@ -10,4 +10,8 @@ class Usuarios_doctores_new extends Model
     //
 
     protected $table = 'doctors';
+
+
+
+
 }

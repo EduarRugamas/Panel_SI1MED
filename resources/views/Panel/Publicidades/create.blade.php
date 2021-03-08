@@ -43,6 +43,7 @@
                 <input class="btn btn-primary" type="submit" value="Publicar publicidad">
             </div>
 
+
         </form>
         <br>
     </div>
