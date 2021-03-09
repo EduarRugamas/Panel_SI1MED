@@ -97,7 +97,7 @@ class NoticiasController extends Controller
             $noticias = Noticias::findOrFail($id);
 
             Storage::delete('public/'.$noticias->foto);
-            $datosNoticias['foto']=$request->file('foto')->store('uploads', 'public');
+            $datosNoticias['foto']= $request->file('foto')->store('uploads', 'public');
 
         }
 

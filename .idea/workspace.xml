@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70953806-cba6-41ec-9e14-a185aac2d620" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticiasController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Usuarios_doctores_newController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Usuarios_doctores_newController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Usuarios_doctores_new.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Usuarios_doctores_new.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Publicidades/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Publicidades/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Panel/Usuario_doctores/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +170,8 @@
       <workItem from="1614783537256" duration="1229000" />
       <workItem from="1614788884433" duration="3917000" />
       <workItem from="1614868890797" duration="6885000" />
-      <workItem from="1615213100020" duration="13867000" />
+      <workItem from="1615213100020" duration="14597000" />
+      <workItem from="1615300830272" duration="5103000" />
     </task>
     <servers />
   </component>

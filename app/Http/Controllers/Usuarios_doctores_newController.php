@@ -48,13 +48,20 @@ class Usuarios_doctores_newController extends Controller
 
             $datosUsuarios_doctors = $request -> except('_token');
 
-            if($request->hasFile('logo') && $request->hasFile('perfil') && $request->hasFile('marca')){
+            if($request->hasFile('logo')){
 
                 $datosUsuarios_doctors['logo'] = $request->file('logo')->store('Images_Doctors/Logo','public');
-                $datosUsuarios_doctors['perfil'] = $request->file('perfil')->store('Images_Doctors/Perfil','public');
-                $datosUsuarios_doctors['marca'] = $request->file('marca')->store('Images_Doctors/Marca','public');
 
+
+            }else if ($request->hasFile('perfil')){
+
+                $datosUsuarios_doctors['perfil'] = $request->file('perfil')->store('Images_Doctors/Perfil','public');
+
+            }if ($request->hasFile('marca')){
+
+                $datosUsuarios_doctors['marca'] = $request->file('marca')->store('Images_Doctors/Marca','public');
             }
+
             Usuarios_doctores_new::insert($datosUsuarios_doctors);
 
             return redirect('/');
@@ -94,10 +101,23 @@ class Usuarios_doctores_newController extends Controller
 
                 $usuarios_doct = Usuarios_doctores_new::findOrFail($id);
 
-                if (Storage::delete('public/'.$usuarios_doct->logo) && Storage::delete('public/'.$usuarios_doct->perfil) && Storage::delete('public/'.$usuarios_doct->marca)){
+                if (Storage::delete('public/'.$usuarios_doct->logo) && Storage::delete('public/'.$usuarios_doct->perfil) && Storage::delete('public/'.$usuarios_doct->marca)  ){
 
                     Usuarios_doctores_new::destroy($id);
 
+                }else if (Storage::delete('public/'.$usuarios_doct->logo) && Storage::delete('public/'.$usuarios_doct->perfil)){
+                    Usuarios_doctores_new::destroy($id);
+
+                }else if(Storage::delete('public/'.$usuarios_doct->perfil) && Storage::delete('public/'.$usuarios_doct->marca)){
+                    Usuarios_doctores_new::destroy($id);
+
+                }else if(Storage::delete('public/'.$usuarios_doct->logo) && Storage::delete('public/'.$usuarios_doct->marca)){
+                    Usuarios_doctores_new::destroy($id);
+
+                }else if (Storage::delete('public/'.$usuarios_doct->logo) || Storage::delete('public/'.$usuarios_doct->perfil) || Storage::delete('public/'.$usuarios_doct->marca)){
+                    Usuarios_doctores_new::destroy($id);
+                }else{
+                    Usuarios_doctores_new::destroy($id);
                 }
 
                 return redirect('UsuariosDoctors');
