@@ -6,18 +6,17 @@
     <table class="table table-light">
         <thead class="thead-light">
         <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Titulo</th>
+            <th>Direccion</th>
+            <th>Logo</th>
+            <th>Foto de Perfil</th>
+            <th>Lema</th>
+            <th>Mision</th>
+            <th>Acciones</th>
+
 
 
         </tr>
@@ -27,24 +26,34 @@
             @foreach ($usuarios as $items)
                 <tr>
 
+                    <td>{{$items->id}}</td>
                     <td>{{$items->nombreDoctor}}</td>
                     <td>{{$items->apellidosDoctor}}</td>
                     <td>{{$items->tituloDoctor}}</td>
                     <td>{{$items->direccion}}</td>
-                    <td>{{$items->logo}}</td>
-                    <td>{{$items->perfil}}</td>
-                    <td>{{$items->nacimiento}}</td>
-                    <td>{{$items->sexo}}</td>
+
+                    @if($items->logo)
+                        <td>
+                            <img src="{{ asset('storage'.'/'.$items->logo)}}" alt="" width="200" height="200">
+                        </td>
+                    @else
+                        <td>No hay contenido</td>
+                    @endif
+
+
+                    @if($items->perfil)
+                    <td>
+                        <img src="{{ asset('storage'.'/'.$items->perfil)}}" alt="" width="200" height="200">
+                    </td>
+                    @else
+                        <td>No hay contenido</td>
+                    @endif
+{{--                    <td>{{$items->nacimiento}}</td>--}}
+{{--                    <td>{{$items->sexo}}</td>--}}
                     <td>{{$items->lema}}</td>
                     <td>{{$items->mision}}</td>
-                    <td>{{$items->equipoLocal}}</td>
-                    <td>{{$items->marca}}</td>
-
-
-
-
-
-
+{{--                    <td>{{$items->equipoLocal}}</td>--}}
+{{--                    <td>{{$items->marca}}</td>--}}
                     <td>
                         <a class="btn btn-secondary" href="{{url('/UsuariosDoctors/'.$items->id.'/edit')}}">
                             Edit

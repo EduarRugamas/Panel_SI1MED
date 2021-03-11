@@ -43,7 +43,10 @@ class ValidacionUsuariosDoctors extends FormRequest
             'marca'=> 'mimes:jpeg,jpg,png,bmp',
 
             //validadicion del campo de sexo que es requerido
-            'sexo' => 'required|in:hombre,mujer'
+            'sexo' => 'required|in:hombre,mujer',
+
+            //validacion de equipo local
+            'equipoLocal'=> 'required|in:si,no'
 
         ];
     }
@@ -89,6 +92,9 @@ class ValidacionUsuariosDoctors extends FormRequest
 
             'user_id.required' => 'El campo es requerido, numeros positivos',
             'user_id.digits_between' => 'Se requiere numeros positivos',
+
+            //validacion de equipo local
+            'equipoLocal.required' => 'El campo es requerido'
 
 
         ];

@@ -124,7 +124,14 @@
                             <option value="si">Si</option>
                             <option value="no">No</option>
                         </select>
-                        {{--                            <small class="form-text text-danger">Error de select.</small>--}}
+                        @if($errors->has('equipoLocal'))
+                            <small class="form-text text-danger">
+
+                                {{$errors->first('equipoLocal')}}
+                            </small>
+
+
+                            @endif
                     </div>
 
                 </div>
@@ -136,7 +143,10 @@
 
                             @if($errors->has('marca'))
 
+                            <small class="form-text text-danger">
                                 {{$errors->first('marca')}}
+                            </small>
+
                         @endif
 
                     </div>

@@ -78,19 +78,32 @@ class Usuarios_doctores_newController extends Controller
 
                 $datos_usuarios_new = request()->except(['_token','_method']);
 
-                if ($request->hasFile('logo') && $request->hasFile('perfil') && $request->hasFile('marca')){
+                if ($request->hasFile('logo')  ){
 
                     $usuarios_doctores = Usuarios_doctores_new::findOrFail($id);
 
                     Storage::delete('public/'.$usuarios_doctores->logo);
-                    Storage::delete('public/'.$usuarios_doctores->perfil);
-                    Storage::delete('public/'.$usuarios_doctores->marca);
+
+
 
                     $datos_usuarios_new['logo']= $request->file('logo')->store('Images_Doctors/Logo', 'public');
-                    $datos_usuarios_new['perfil']= $request->file('perfil')->store('Images_Doctors/Perfil', 'public');
-                    $datos_usuarios_new['marca']= $request->file('marca')->store('Images_Doctors/Marca', 'public');
 
-                }
+
+
+                }else if ($request->hasFile('perfil')){
+                    $usuarios_doctores = Usuarios_doctores_new::findOrFail($id);
+
+                    Storage::delete('public/'.$usuarios_doctores->perfil);
+
+                    $datos_usuarios_new['perfil']= $request->file('perfil')->store('Images_Doctors/Perfil', 'public');
+
+                }else if ($request->hasFile('marca')){
+                    $usuarios_doctores = Usuarios_doctores_new::findOrFail($id);
+
+                    Storage::delete('public/'.$usuarios_doctores->marca);
+
+                    $datos_usuarios_new['marca']= $request->file('marca')->store('Images_Doctors/Marca', 'public');
+            }
 
                 Usuarios_doctores_new::where('id','=',$id)->update($datos_usuarios_new);
 
