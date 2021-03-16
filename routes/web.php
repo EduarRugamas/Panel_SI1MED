@@ -31,6 +31,12 @@ Route::get('UsuariosDoctors/{usuarios_doctores}/edit','Usuarios_doctores_newCont
 Route::patch('UsuariosDoctors/{usuarios_doctores}','Usuarios_doctores_newController@update')->name('UsuariosDoctors.update');
 Route::delete('UsuariosDoctors/{usuarios_doctores}','Usuarios_doctores_newController@destroy')->name('UsuariosDoctors.destroy');
 
+//Ruta para usuarios en general
+Route::get('UsersNew','UsuariosNewController@index')->name('UsersNew.index');
+Route::post('UsersNew','UsuariosNewController@store')->name('UsersNew.store');
+Route::get('UsersNew/create','UsuariosNewController@create')->name('UsersNew.create');
+
+
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');

@@ -1,20 +1,6 @@
 @extends('Plantillas.plantilla_panel')
 @section('vistas')
-{{--    <div class="flex-center position-ref full-height">--}}
-{{--        @if (Route::has('login'))--}}
-{{--            <div class="top-right links">--}}
-{{--                @auth--}}
-{{--                    <a href="{{ url('/home') }}">Home</a>--}}
-{{--                @else--}}
-{{--                    <a href="{{ route('login') }}">Login</a>--}}
 
-{{--                    @if (Route::has('register'))--}}
-{{--                        <a href="{{ route('register') }}">Register</a>--}}
-{{--                    @endif--}}
-{{--                @endauth--}}
-{{--            </div>--}}
-{{--        @endif--}}
-{{--    </div>--}}
     <h1>Mostrando las noticias y publicidades</h1>
     <a name="noticias" class="btn btn-primary" href="{{url('/noticias')}}">Ver Noticias</a>
     <a name="publicidad" class="btn btn-primary" href="{{url('/publicidad')}}">Ver Publicidades</a>
