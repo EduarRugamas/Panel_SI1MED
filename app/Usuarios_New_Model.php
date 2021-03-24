@@ -8,6 +8,9 @@ class Usuarios_New_Model extends Model
 {
     //
     protected $table = 'users';
+//    protected $table_doctor = 'doctors';
+//    protected $fillable = ['password'];
 
-    protected $fillable = ['password'];
+
+
 }

@@ -25,7 +25,7 @@
             <a href="{{url('/')}}" class="d-block text-light p-3"><i class="icon ion-md-home mr-2 lead"></i>Tabla de Contenido</a>
             <a href="{{url('/noticias/create')}}" class="d-block text-light p-3"><i class="icon ion-md-paper mr-2 lead"></i>Agregar Noticias</a>
             <a href="{{url('/publicidad/create')}}" class="d-block text-light p-3"><i class="icon ion-md-paper mr-2 lead"></i>Agregar Publicidad</a>
-            <a href="{{url('/UsersNew/create')}}" class="d-block text-light p-3"><i class="icon ion-md-paper mr-2 lead"></i>Agregar Usuario</a>
+            <a href="{{url('/Users/create')}}" class="d-block text-light p-3"><i class="icon ion-md-paper mr-2 lead"></i>Agregar Usuario</a>
             <a href="{{url('/UsuariosDoctors/create')}}" class="d-block text-light p-3"><i class="icon ion-md-person mr-2 lead"></i>Agregar usuario Doctor</a>
         </div>
     </div>
@@ -42,12 +42,13 @@
 </div>
 
 
-@yield('script')
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+@yield('script')
 </body>
 </html>

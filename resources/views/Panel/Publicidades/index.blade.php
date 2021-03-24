@@ -1,6 +1,6 @@
-@extends('Plantillas.plantilla_panel')
+@extends('Plantillas.plantilla')
 
-@section('tabla')
+@section('tablas')
 
     <table class="table table-light">
         <thead class="thead-light">

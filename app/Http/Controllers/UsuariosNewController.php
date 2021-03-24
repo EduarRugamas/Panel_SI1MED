@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Usuarios_New_Model;
+use App\Usuarios_doctores_new;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -15,9 +16,11 @@ class UsuariosNewController extends Controller
 
     public function index(){
 
-        $users = Usuarios_New_Model::paginate(50);
+        $users = Usuarios_New_Model::paginate(150);
+        $users_doctors = Usuarios_doctores_new::paginate(500);
 
-        return view('Home.home', compact('users'));
+
+        return view('Home.home', compact('users','users_doctors'));
     }
 
     public function create(){

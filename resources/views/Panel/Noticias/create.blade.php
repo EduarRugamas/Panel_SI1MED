@@ -1,4 +1,4 @@
-@extends('Plantillas.plantilla_panel')
+@extends('Plantillas.plantilla')
 
 @section('vistas')
 

@@ -1,7 +1,7 @@
-@extends('Plantillas.plantilla_panel')
+@extends('Plantillas.plantilla')
 
-@section('tabla')
-
+@section('tablas')
+    @isset($noticias)
     <table class="table table-light">
         <thead class="thead-light">
         <tr>
@@ -12,7 +12,7 @@
         </tr>
         </thead>
         <tbody>
-        @isset($noticias)
+
             @foreach ($noticias as $items)
                 <tr>
                     {{-- <td>{{$loop->iteration}}</td> --}}
@@ -35,7 +35,8 @@
                     </td>
                 </tr>
             @endforeach
-        @endisset
+
         </tbody>
     </table>
+    @endisset
 @endsection

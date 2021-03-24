@@ -13,10 +13,10 @@ class Usuarios_doctores_newController extends Controller
 {
     public function index(){
 
-        $usuarios = Usuarios_doctores_new::paginate(50);
+        $usuarios_doctores = Usuarios_doctores_new::paginate(50);
 
 
-        return view('Home.home', compact('usuarios'));
+        return view('Home.home', compact('usuarios_doctores'));
 
     }
     public function create(Request $request){

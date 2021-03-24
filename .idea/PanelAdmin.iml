@@ -108,5 +108,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="twitter-bootstrap" level="application" />
+    <orderEntry type="library" name="dataTables.bootstrap4" level="application" />
+    <orderEntry type="library" name="jquery.dataTables" level="application" />
+    <orderEntry type="library" name="a076d05399" level="application" />
+    <orderEntry type="library" name="line-awesome" level="application" />
+    <orderEntry type="library" name="themify-icons" level="application" />
   </component>
 </module>

@@ -22,8 +22,8 @@
         </tr>
         </thead>
         <tbody>
-        @isset($usuarios)
-            @foreach ($usuarios as $items)
+        @isset($usuarios_doctores)
+            @foreach ($usuarios_doctores as $items)
                 <tr>
 
                     <td>{{$items->id}}</td>
