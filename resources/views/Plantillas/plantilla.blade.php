@@ -78,7 +78,7 @@
                         <div class="card-body">
                             <span class="ti-briefcase"></span>
                             <div>
-                                <h5>Tabla de Publicidad @yield('tabla_2')</h5>
+                                <h5>Tabla de Publicidad</h5>
                                 <h4></h4>
                             </div>
                         </div>
@@ -90,12 +90,12 @@
                         <div class="card-body">
                             <span class="ti-briefcase"></span>
                             <div>
-                                <h5>Tabla de Usuarios @yield('tabla_3')</h5>
+                                <h5>Tabla de Usuarios</h5>
                                 <h4></h4>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="@yield('url_users')">Mostrar</a>
+                            <a href="@yield('url_usuarios')">Mostrar</a>
                         </div>
                     </div>
                 </div>

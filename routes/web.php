@@ -23,6 +23,12 @@ Route::get('/', function () {
 Route::resource('noticias','NoticiasController');
 Route::resource('publicidad','PublicidadesController');
 
+//Ruta para usuarios en general
+Route::resource('Users','UsuariosNewController');
+//Route::get('UsersNew','UsuariosNewController@index')->name('UsersNew.index');
+//Route::post('UsersNew','UsuariosNewController@store')->name('UsersNew.store');
+//Route::get('UsersNew/create','UsuariosNewController@create')->name('UsersNew.create');
+
 //Rutas de usuarios doctores new
 Route::resource('UsuariosDoctors','Usuarios_doctores_newController');
 //Route::get('UsuariosDoctors','Usuarios_doctores_newController@index')->name('UsuariosDoctors.index');
@@ -32,11 +38,6 @@ Route::resource('UsuariosDoctors','Usuarios_doctores_newController');
 //Route::patch('UsuariosDoctors/{usuarios_doctores}','Usuarios_doctores_newController@update')->name('UsuariosDoctors.update');
 //Route::delete('UsuariosDoctors/{usuarios_doctores}','Usuarios_doctores_newController@destroy')->name('UsuariosDoctors.destroy');
 
-//Ruta para usuarios en general
-Route::resource('Users','UsuariosNewController');
-//Route::get('UsersNew','UsuariosNewController@index')->name('UsersNew.index');
-//Route::post('UsersNew','UsuariosNewController@store')->name('UsersNew.store');
-//Route::get('UsersNew/create','UsuariosNewController@create')->name('UsersNew.create');
 
 Route::get('/panel', function (){
     return view('Plantillas.test');

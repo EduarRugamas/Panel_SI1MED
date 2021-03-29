@@ -1,10 +1,11 @@
-@extends('Plantillas.plantilla')
+@extends('Plantillas.plantilla_form')
 
+@section('titulo')
+    Formulario de creacion de Noticias
+@endsection
 @section('vistas')
 
-    <h1>
-        Formulario de publicacion de Noticias
-    </h1>
+
     <div class=" h-150 row justify-content-center h-100">
         <form action="{{url('/noticias')}}" METHOD="post" enctype="multipart/form-data">
             {{@csrf_field()}}
